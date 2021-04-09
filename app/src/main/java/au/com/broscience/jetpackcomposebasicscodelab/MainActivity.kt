@@ -44,19 +44,19 @@ fun Greeting(name: String) {
     var isSelected by remember { mutableStateOf(false) }
     val backgroundColor by animateColorAsState(if (isSelected) Color.Red else Color.Transparent)
 
-
     Text(
         text = "Hello $name!",
         modifier = Modifier
             .padding(24.dp)
             .background(color = backgroundColor)
-            .clickable(onClick = { isSelected = !isSelected })
+            .clickable(onClick = { isSelected = !isSelected }),
+        style = MaterialTheme.typography.h1
     )
 }
 
 @Composable
 fun MyScreenContent(
-    names: List<String> = List(1000) { "Hello Android #$it" }
+    names: List<String> = List(1000) { "Android #$it" }
 ) {
     val counterState = remember { mutableStateOf(0) }
 
