@@ -1,4 +1,4 @@
-@ Jatpack Compose Basics Codelab
+# Jatpack Compose Basics Codelab
 
 Jetpack Compose is a modern toolkit designed to simplify UI development. It combines a reactive 
 programming model with the conciseness and ease of use of the Kotlin programming language. It is 
